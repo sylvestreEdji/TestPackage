@@ -1,1 +1,0 @@
-typeSearchIndex = [{"p":"maths","l":"addition"},{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"principal","l":"Main"}];updateSearchResults();
