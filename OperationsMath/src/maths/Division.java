@@ -10,14 +10,15 @@ public class Division {
         System.out.print("/********** Division **********/");
         System.out.print("\n");
         System.out.print("Entrez le premier nombre : ");
-        Scanner saisieX = new Scanner(System.in);
-        x = saisieX.nextInt();
-
+        try (Scanner saisieX = new Scanner(System.in)) {
+            x = saisieX.nextInt();
+        }
         System.out.print("Entrez le second nombre : ");
-        Scanner scan1=new Scanner(System.in);
-        int y=scan1.nextInt();
+        try (Scanner saisieY = new Scanner(System.in)) {
+            int y=saisieY.nextInt();
 
-        division = x / y;
+            division = x / y;
+        }
         System.out.println("La division nous donne : = " + division);
     }
 }

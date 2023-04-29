@@ -8,14 +8,15 @@ public class Soustraction {
         System.out.print("/********** Soustraction **********/");
         System.out.print("\n");
         System.out.print("Entrez le premier nombre : ");
-        Scanner saisieX = new Scanner(System.in);
-        x = saisieX.nextInt();
-
+        try (Scanner saisieX = new Scanner(System.in)) {
+            x = saisieX.nextInt();
+        }
         System.out.print("Entrez le second nombre : ");
-        Scanner scan1=new Scanner(System.in);
-        int y=scan1.nextInt();
+        try (Scanner saisieY = new Scanner(System.in)) {
+            int y=saisieY.nextInt();
 
-        difference = x - y;
+            difference = x - y;
+        }
         System.out.println("La difference nous donne : = " + difference);
     }
 }
